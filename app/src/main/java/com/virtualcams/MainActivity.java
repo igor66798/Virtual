@@ -1,5 +1,6 @@
-import com.virtualcams.R;
 package com.virtualcams;
+
+import com.virtualcams.R;
 
 import android.Manifest;
 import android.app.Activity;
@@ -35,9 +36,10 @@ public class MainActivity extends Activity {
         pickImage.setOnClickListener(v -> openFile("image/*", PICK_IMAGE_REQUEST));
         pickVideo.setOnClickListener(v -> openFile("video/*", PICK_VIDEO_REQUEST));
 
-        // Запрос разрешения
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 100);
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 100);
         }
     }
 
