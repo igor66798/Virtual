@@ -1,3 +1,4 @@
+import com.virtualcams.R;
 package com.virtualcams;
 
 import android.Manifest;
