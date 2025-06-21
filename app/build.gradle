@@ -3,7 +3,6 @@ apply plugin: 'com.android.application'
 
 android {
     namespace 'com.virtualcams'
-    namespace "com.virtualcams.app"
     compileSdkVersion 34
     defaultConfig {
         applicationId "com.virtualcams"
