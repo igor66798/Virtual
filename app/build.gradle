@@ -45,7 +45,6 @@ android {
     }
     aaptOptions {
         cruncherEnabled = false
-        useNewCruncher = false
     }
     testOptions {
         unitTests.returnDefaultValues = true
